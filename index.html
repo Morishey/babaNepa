@@ -1,107 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invitation</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div class="star-field"></div>
 
-      <h1 style="margin-top: 10px; margin-bottom: -10px;">Celebrating</h1>
-      <p
-        class="cap"
-        style="font-size: 16px; font-family: 'Times New Roman', Times, serif"
-      >
-        THE
-      </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 
-      
-        <p
-        class="cap"
-        tyle="font-size: 16px; font-family: 'Times New Roman', Times, serif;"
-      >
-        THE 10TH YEAR REMEMBRANCE
-      </p>
-      <p
-        class="cap"
-        style="font-size: 16px; font-family: 'Times New Roman', Times, serif"
-      >
-        OF
-      </p>
-      <img class="boni" src="./img/boni.png" alt="boni" />
-      <img src="./img/cloud.png" alt="cloud" class="cloud">
-      
-      <div class="prag">
-        <p
-        class="name"
-        style="
+<body>
+  <div class="container">
+    <div class="star-field"></div>
+    <p class="invi" style="color: silver; margin-top: 9px;">INVITATION</p>
+
+    <h1 style="margin-top: 10px; margin-bottom: -10px;">Celebrating</h1>
+    <p class="cap" style="font-size: 16px; font-family: 'Times New Roman', Times, serif">
+      THE
+    </p>
+
+
+    <p class="cap" tyle="font-size: 16px; font-family: 'Times New Roman', Times, serif;">
+      THE 10TH YEAR REMEMBRANCE
+    </p>
+    <p class="cap" style="font-size: 16px; font-family: 'Times New Roman', Times, serif">
+      OF
+    </p>
+    <img class="boni" src="./img/boni.png" alt="boni" />
+    <img src="./img/cloud.png" alt="cloud" class="cloud">
+
+    <div class="prag">
+      <p class="name" style="
           font-family: Georgia, 'Times New Roman', Times, serif;
           font-weight: bolder;
           font-size: 20px; 
-        "
-      >
+        ">
         OLUWAREMILEKUN ABEKE BANKOLE
       </p>
       <p class="small" style="font-size: 15px">1961-2014</p>
-      <p
-        class="date"
-        style="
+      <button onclick="openCalendar()" class="date" style="
           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
             'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
           font-weight: bold;
-          letter-spacing: 2px;
-        "
-      >
+          letter-spacing: 2px; background-color:transparent; padding: 10px; font-size: 17px;
+          border:0.5px solid grey; color: silver; border-radius: 50px; margin: auto 10px; box-shadow:0 0 10px rgba(141, 148, 148, 0.8);
+        ">
         SATURDAY JAN 18TH 2025 | 1:00PM
-      </p>
-      <p
-        class="venue"
-        style="
+      </button>
+      <p class="venue" style="
           margin-top: 10px;
           font-family: Georgia, 'Times New Roman', Times, serif;
           font-weight: bold;
-        "
-      >
+        ">
         TO BE HELD AT
       </p>
-      <p
-        class="venuesmall"
-        style="
+      <p class="venuesmall" style="
           margin: 12px;
           font-family: Georgia, 'Times New Roman', Times, serif;
-          font-size: 14px;
-        "
-      >
+          font-size: 14px; color: silver;
+        ">
         OLUSHOGA STREET OFF ALAFIA
       </p>
-      <p
-        class="location"
-        style="
+      <p class="location" style="
           font-family: Georgia, 'Times New Roman', Times, serif;
           font-weight: bold;
-        "
-      >
+        ">
         FOLLOWED BY A RECEPTION AT
       </p>
-      <p
-        class="locationsmall"
-        style="
+      <p class="locationsmall" style="
           margin: 10px;
           font-family: Georgia, 'Times New Roman', Times, serif;
-          font-size: 14px;
-        "
-      >
+          font-size: 14px; color: silver;
+        ">
         OLUSHOGA STREET OFF ALAFIA
       </p>
-    </div>
-      
+      <p class="call">for Directions call <span style="color: silver;">08101407600</span> (Rahman)</p>
+
+      <footer style="font-style: italic; color: silver; font-family: 'Goodvibes'; margin-top: 20px;">Courtsey of the
+        Children</footer>
+
     </div>
 
+  </div>
 
-    <script src="./app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-  </body>
+
+
+
+  <script src="./app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+  <script>
+    function openCalendar() {
+      // Detect if the device is iOS
+      var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+      // iOS uses "calshow://" URL scheme to open the native calendar
+      if (isIOS) {
+        window.location.href = "calshow://";
+      } else {
+        alert("This feature is only supported on iOS devices.");
+      }
+    }
+  </script>
+</body>
+
 </html>

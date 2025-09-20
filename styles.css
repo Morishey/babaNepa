@@ -82,8 +82,12 @@ p, h1 {
   
 }
 
+h1 {
+  color: white;
+}
+
 .boni {
-  width: 70%;
+  width: 35%;
   justify-content: center;
   align-items: center;
   /* box-shadow: 0 0 30px 30px rgb(60, 59, 4); */
@@ -95,7 +99,7 @@ p, h1 {
 .cloud {
     
     position: absolute;
-    top: 40%;
+    top: 35%;
 right: 10%;
 
     width: 70%;
@@ -193,7 +197,7 @@ h1 {
     }
     
     .boni {
-      width: 70%;
+      width: 50%;
       justify-content: center;
       align-items: center;
       /* box-shadow: 0 0 30px 30px rgb(60, 59, 4); */
@@ -205,7 +209,7 @@ h1 {
     .cloud {
         
         position: absolute;
-        top: 30%;
+        top: 35%;
     right: 10%;
     
         width: 70%;
